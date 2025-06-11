@@ -16,7 +16,7 @@ export interface IUser{
 const userSchema = new Schema<IUser>(
     //field defination main object => defination of your field and each field has options like unique etc
     {
-        email:{type:String , required: true , unique:true},
+        email:{type:String , required: true , unique:true, match:[/.+\@.+\..+/,"enter valid email address"]},
         password:{type:String , required : true}
     },
     //second curly brace => contanis schema level optiins eg=> timestamp , versionkey , toJson
