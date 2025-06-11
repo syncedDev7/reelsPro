@@ -1,4 +1,4 @@
-//declaring the globa object 
+//declaring the global object 
 import { Connection } from "mongoose"
 declare global{
     var mongoose:{
