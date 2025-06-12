@@ -64,7 +64,7 @@ export async function POST(request:NextRequest){
 
 
     } catch (error) {
-        // console.log(error);
+        console.log(error);
         
             return NextResponse.json(
             {error:"video not uploaded sucessfully "},
